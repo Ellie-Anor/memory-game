@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --text: rgb(69,63,63);
+    --bg-color: blanchedalmond;
+    --accent: rgb(53, 46, 46);
+    --button: rgba(163, 112, 87, 0.428);
+}
+html {
+    color: var(--text);
+    background-color: var(--bg-color);
+    font-family: "Lucida Console", "Courier New", monospace;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 10px;
+}
+
+header .header-button {
+    display: flex;
+    gap: 1rem;
+}
+
+header button {
+    border: none;
+    background-color: var(--button);
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+header button:hover {
+    background-color: var(--accent);
+    color: var(--bg-color);
+}
+
+button.new-game {width: 6rem;}
+button.leaders-table {width: 8rem;}
